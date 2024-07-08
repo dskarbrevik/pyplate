@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "pyplate"
+version = "0.1.0"
+description = "Just a good ol' template for any open source Python project."
+authors = ["Your Name <you@email.com>"]
+readme = "README.md"
+# packages = [{include = "pyplate"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^7.3"
+pydata-sphinx-theme = "0.15.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
